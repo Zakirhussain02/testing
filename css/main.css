@@ -1,0 +1,297 @@
+@import "compass/css3";
+
+/*Menu for site*/
+
+.navigation {
+  list-style: none;
+  margin: 0; 
+  
+  background:green;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-flex-flow: row wrap;
+  justify-content:flex-start;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+/*.navigation a:hover {
+  background:black;
+}*/
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+/*Footer containers ie., columns*/
+#container3 {
+  float:left;
+  width:100%;
+  overflow:hidden;
+  position:relative;
+}
+#container2 {
+  float:left;
+  width:100%;
+  position:relative;
+  right:30%;
+}
+#container1 {
+  float:left;
+  width:100%;
+  position:relative;
+  right:40%;
+}
+#col1 {
+  float:left;
+  width:26%;
+  position:relative;
+  left:72%;
+  overflow:hidden;
+}
+#col2 {
+  float:left;
+  width:36%;
+  position:relative;
+  left:76%;
+  overflow:hidden;
+}
+#col3 {
+  float:left;
+  width:26%;
+  position:relative;
+  left:80%;
+  overflow:hidden;
+}
+
+/*footer*/
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  background-color:green;
+  color: white;
+  text-align: center;
+}
+
+.h4 {
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-size: 1.23077em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 3px;
+}
+
+.h4f{
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-size: 1.23077em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 3px;
+  padding: 5px;
+  text-align: center;
+}
+
+/*selling product 2 lines*/
+.align{
+    text-align: center;
+}
+/*spaces for menu*/
+.tab {
+    margin-right: 10em
+    }
+
+/*Spaces for search bar*/ 
+.tabs{
+    margin-bottom: 15em;
+}
+
+.tabz{
+    margin-right: 60em;
+    color: white;
+}
+/*footer aside*/
+.side{
+  text-align: center;
+  list-style: none;
+}
+
+.side a{
+  text-decoration: none;
+  color: white;
+}
+
+h3{
+    color:green;
+}
+h3:after {
+    content: "";
+    display: block;
+    margin: 10px auto 20px;
+    height: 4px;
+    width: 100px;
+    border-top: 1px solid #328a42;
+    border-bottom: 1px solid #328a42;
+  }
+
+/*grid images*/
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  padding: 2px;
+  width: 170px;
+  height: 140px;
+  margin-top: 20px;
+  
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+.abbr-text{
+    text-decoration: none;
+}
+.alignz{
+    text-align: start;
+}
+
+.aligns{
+    text-align: right;
+}
+/*End of grid images*/
+
+/*buttons*/
+.btns{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btns a{
+    text-decoration:none;
+    color:white;
+}
+.btns:hover{
+    color:royalblue;
+    background-color:red;
+}
+
+/*Search bar for menu*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.search {
+  width: 100%;
+  position: relative
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid green;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color:green;
+}
+
+.searchButton {
+  position: absolute;  
+  right: -50px;
+  width: 40px;
+  height: 36px;
+  border: 1px solid green;
+  background: green;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  padding-bottom: 350px;
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*image hover*/
+.zoom {
+    padding: 5px;
+    transition: transform .2s;
+    width: 170px;
+    height: 140px;
+    margin: 0 auto;
+  }
+  
+.zoom:hover {
+transform: scale(0.5,0.5);
+
